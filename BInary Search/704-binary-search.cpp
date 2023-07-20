@@ -9,7 +9,7 @@ public:
 
         while(s <= e)
         {
-            int mid = s + (s+e)/2;
+            int mid = s + (e-s)/2;
             if(nums[mid] < target){
                 s=mid+1;
             }
