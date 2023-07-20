@@ -6,19 +6,16 @@ public:
 
         if(n == 2) return 2;
 
-        int first = 1;
-        int second = 2;
+        vector<int> memo(n);
 
-        int result = 0;
+        memo[0] = 1;
+        memo[1] = 2;
 
         for(int i=2;i<n;i++){
-            result = first + second;
-
-            first = second;
-            second = result;
+            memo[i] = memo[i-1] + memo[i-2];
         }
 
-        return result;
+        return memo[n-1];
 
     }
 };
