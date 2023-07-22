@@ -19,7 +19,7 @@ const howSum = (targetSum,numbers,memo = {}) =>{
         }
     }
     
-    memo[targetSum] = []
+    memo[targetSum] = null
     return null;
 }
 
