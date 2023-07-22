@@ -21,7 +21,7 @@ const canConstruct = (target,wordBank,memo = {}) => {
     return false;
 }
 
-console.log(canConstruct("purple",["purp","le"])) //true
+console.log(canConstruct("purple",["purp","p","ur","le","purpl"])) //true
 console.log(canConstruct("abcdef",["ab","abc","cd","def","abcd"])) //true
 console.log(canConstruct("skateboard",["bo","rd","ate","t","ska","sk","boar"])) //false
 console.log(canConstruct("enterapotentpot",["a","p","ent","enter","ot","o","t"])) //true
